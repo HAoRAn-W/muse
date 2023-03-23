@@ -16,11 +16,10 @@ import java.util.Random;
 @Slf4j
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "muse.whr.one", maxAge = 3600)
+@CrossOrigin(origins = "https://muse.whr.one", maxAge = 3600)
 public class MetController {
     @Autowired
     MetArtworkRepository metArtworkRepository;
-
 
     private final String metObjectURL = "https://collectionapi.metmuseum.org/public/collection/v1/objects/{id}";
 
