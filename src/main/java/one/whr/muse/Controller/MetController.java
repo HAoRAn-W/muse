@@ -16,7 +16,7 @@ import java.util.Random;
 @Slf4j
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "https://muse.whr.one", maxAge = 3600)
+@CrossOrigin(origins = "muse.whr.one", maxAge = 3600)
 public class MetController {
     @Autowired
     MetArtworkRepository metArtworkRepository;
